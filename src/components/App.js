@@ -26,8 +26,8 @@ useEffect(()=>{
             <div id="review-container">
             {slideIndex >= 0 ?
             <>
-            <h2 id="person-index">{Reviews[slideIndex].name}</h2>
-            <img src={Reviews[slideIndex].image} id="person-index-image" width="200" height="200"/>
+            <h2 id={"person-" + slideIndex}>{Reviews[slideIndex].name}</h2>
+            <img src={Reviews[slideIndex].image} id={"person-"+slideIndex+"-image"} width="200" height="200"/>
             </> : null}
             <div>
            
